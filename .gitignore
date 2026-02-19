@@ -1,0 +1,40 @@
+# Build output
+build/
+dist/
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Compiled binaries
+*.dll
+*.so
+*.lib
+*.exp
+*.obj
+*.o
+*.exe
+
+# Private keys - NEVER commit
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE / editor
+.vscode/
+.claude/
+*.suo
+*.user
+*.sln.docview
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
