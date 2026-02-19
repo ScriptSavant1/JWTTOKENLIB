@@ -1,22 +1,25 @@
-# Build output
+# Build output - exclude entirely
 build/
-dist/
 
-# CMake generated
+# CMake generated files
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
 *.cmake
 
-# Compiled binaries
-*.dll
-*.so
-*.lib
-*.exp
+# Compiled object/intermediate files (anywhere)
 *.obj
 *.o
+*.exp
+*.lib
 *.exe
+
+# Binaries - excluded everywhere EXCEPT dist/
+*.dll
+*.so
+!dist/**/*.dll
+!dist/**/*.so
 
 # Private keys - NEVER commit
 *.pem
